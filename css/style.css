@@ -379,7 +379,18 @@ p {
  * MEDIA QUERIES *
  *****************/
 @media (max-width: 768px) {
+	.header {
+		margin-bottom: 30px;
+	}
+
 	.tittle h2 {
 		font-size: 20px;
+	}
+}
+
+@media (max-width: 568px) {
+	.header h1, 
+	.header h2 {
+		display: none;
 	}
 }
