@@ -1,8 +1,9 @@
 body {
 	background-image: url('../images/space.jpg');
-	height: 100vh;
+	/* height: 100vh; */
   background-position: center center;
-  background-repeat: no-repeat;  
+  background-repeat: no-repeat; 
+	background-attachment: fixed; 
   background-size: cover;
 	color: white;
 	text-align: center;
@@ -23,6 +24,19 @@ body {
 	color: white;
 	text-decoration: none;
 	font-size: 20px;
+}
+
+.header .col-2 {
+	margin-left: auto;
+	display: none;
+}
+
+.header .col-2 a{
+	padding: 0 8px;
+}
+
+.header .col-2 a:hover {
+	color: #FFCE5C;
 }
 
 .header h1 {
@@ -379,8 +393,16 @@ p {
  * MEDIA QUERIES *
  *****************/
 @media (max-width: 768px) {
-	.header {
-		margin-bottom: 30px;
+	.header {	
+		padding-bottom: 30px;
+	}
+
+	.header .col-2 {
+		display: block;
+	}
+
+	.header #myAudio {
+		display: none;
 	}
 
 	.tittle h2 {
@@ -393,4 +415,5 @@ p {
 	.header h2 {
 		display: none;
 	}
+	
 }
